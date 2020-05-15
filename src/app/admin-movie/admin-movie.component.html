@@ -1,0 +1,13 @@
+<nav class="nav">
+  <a class="nav-link" style="color: red;" [routerLink]="['/movies']"
+    >movie list</a
+  >
+  <a class="nav-link" style="color: red;" [routerLink]="['/movies', 'add']">Add movie</a>
+  <a class="nav-link" style="color: red;" [routerLink]="['/category']">category list</a>
+  <a class="nav-link" style="color: red;" [routerLink]="['/category', 'add']">Add category</a>
+  <a class="nav-link" style="color: red;" [routerLink]="['/admins']">admin list</a>
+  <a class="nav-link" style="color: red;" [routerLink]="['/admins', 'add']">Add admin</a>
+  
+</nav>
+
+<router-outlet></router-outlet>

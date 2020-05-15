@@ -1,0 +1,8 @@
+
+<td>{{ admin.name }}</td>
+<td>{{ admin.lastName }}</td>
+<td>{{ admin.username }}</td>
+<td type="password">{{ admin.password }}</td>
+
+<td><button (click)="onDeleteClick()">delete</button></td>
+<td><button [routerLink]="['/admins', 'edit', admin.id]">edit</button></td>

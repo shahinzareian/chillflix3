@@ -1,0 +1,21 @@
+<app-admin-movie></app-admin-movie>
+<br/>
+<h2>admins</h2>
+<br/>
+<table>
+  <tr>
+    <th>name</th>
+    <th>lastName</th>
+    <th>username</th>
+    <th>password</th>
+    <th>delete</th>
+    <th>edit</th>
+  </tr>
+
+  <tr
+    app-admin
+    *ngFor="let admin of admins"
+    [admin]="admin"
+    (delete)="onDelete($event)"
+  ></tr>
+</table>

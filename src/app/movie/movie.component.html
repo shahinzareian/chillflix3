@@ -1,0 +1,8 @@
+<td>{{ movie.title }}</td>
+<td>{{ movie.year }}</td>
+<td>{{ movie.comments }}</td>
+<td>{{ movie.movieUrl }}</td>
+<td>{{ movie.picUrl }}</td>
+<td>{{ movie.category.name }}</td>
+<td><button (click)="onDeleteClick()">delete</button></td>
+<td><button [routerLink]="['/movies', 'edit', movie.id]">edit</button></td>

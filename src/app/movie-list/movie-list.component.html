@@ -1,0 +1,24 @@
+<app-admin-movie></app-admin-movie>
+<br/>
+<h2>Movies</h2><br/>
+<form >
+<table>
+  <tr>
+    <th>title</th>
+    <th>year</th>
+    <th>comments</th>
+    <th>movieUrl</th>
+    <th>picUrl</th>
+    <th>category</th>
+    <th>delete</th>
+    <th>edit</th>
+  </tr>
+
+  <tr
+    app-movie
+    *ngFor="let movie of movies"
+    [movie]="movie"
+    (delete)="onDelete($event)"
+  ></tr>
+</table>
+</form>
