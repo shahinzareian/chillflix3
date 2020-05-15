@@ -1,0 +1,24 @@
+<div *ngIf="categories && movies" href="#" onclick="">
+  <h2 *ngFor="let categoryShow of categories">
+    <h2 href="#" onclick="">{{ categoryShow.name }}</h2>
+
+    <div class="wrapper">
+      <section id="section1">
+        <!-- <a href="#section3">‹</a> -->
+
+        <ng-container *ngFor="let movie of getMoviesForCategory(categoryShow)">
+          <div class="item">
+            <!-- <div> -->
+            <img
+              style="width: 300px; height: auto;"
+              [src]="movie.picUrl"
+              [routerLink]="['/showMovie', this.movie.id]"
+            />
+          </div>
+          <!-- </div> -->
+        </ng-container>
+        <!-- <a href="#section3">›</a> -->
+      </section>
+    </div>
+  </h2>
+</div>

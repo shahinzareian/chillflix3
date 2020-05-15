@@ -1,0 +1,25 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  overflow: initial;
+  text-overflow: inherit;
+  white-space: nowrap;
+  padding: 15px;
+  max-width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h2 {
+  color: aliceblue;
+}

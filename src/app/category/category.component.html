@@ -1,0 +1,5 @@
+
+<td>{{ category.name }}</td>
+
+<td><button (click)="onDeleteClick()">delete</button></td>
+<td><button [routerLink]="['/category', 'edit', category.id]">edit</button></td>

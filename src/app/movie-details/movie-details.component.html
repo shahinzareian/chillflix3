@@ -1,0 +1,20 @@
+<!-- <br/>
+<input type="text" placeholder="Title" [(ngModel)]="title" /><br /><br/>
+<input type="number" placeholder="Year" [(ngModel)]="year" /><br /><br/>
+<input type="text" placeholder="comments" [(ngModel)]="comments" /><br /><br/>
+ <input type="text" placeholder="movieUrl" [(ngModel)]="movieUrl" /><br /><br/> -->
+<!-- <input type="text" placeholder="picUrl" [(ngModel)]="picUrl" /><br /><br/>
+<button (click)="playMovie()">play!</button> -->
+
+<div *ngIf="movie">
+  <h1>{{ movie.title }}</h1>
+  <h2>{{ movie.year }}</h2>
+  <h2>{{ movie.comments }}</h2>
+  <img
+    [routerLink]="['/playMovie', movie.id]"
+    style="width: 300px; height: auto;"
+    src="{{ movie.picUrl }}"
+  /><br />
+
+  <button [routerLink]="['/playMovie', movie.movieUrl]">play!</button>
+</div>

@@ -1,0 +1,7 @@
+
+<select id="category" [(ngModel)]="category">
+  <option *ngFor="let catOption of categories" [ngValue]="catOption">{{
+    catOption.name
+  }}</option>
+</select>
+

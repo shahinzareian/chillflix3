@@ -1,0 +1,9 @@
+<app-admin-movie></app-admin-movie><br/>
+<app-category-select #categorySelect></app-category-select><br /><br/>
+<input type="text" placeholder="Title" [(ngModel)]="title" /><br /><br/>
+<input type="number" placeholder="Year" [(ngModel)]="year" /><br /><br/>
+<input type="text" placeholder="comments" [(ngModel)]="comments" /><br /><br/>
+<input type="text" placeholder="movieUrl" [(ngModel)]="movieUrl" /><br /><br/>
+<input type="text" placeholder="picUrl" [(ngModel)]="picUrl" /><br /><br/>
+
+<button (click)="updateMovie()">edit movie!</button>

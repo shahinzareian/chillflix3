@@ -1,0 +1,18 @@
+<app-admin-movie></app-admin-movie><br/>
+<h2>categories</h2><br/>
+
+<table>
+  <tr>
+    <th>name</th>
+
+    <th>delete</th>
+    <th>edit</th>
+  </tr>
+
+  <tr
+    app-category
+    *ngFor="let category of categories"
+    [category]="category"
+    (delete)="onDelete($event)"
+  ></tr>
+</table>
